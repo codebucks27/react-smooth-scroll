@@ -24,7 +24,6 @@ import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll';
   
 const options = {
     damping : 0.07,
-    thumbMinSize: 100,
     plugins: {
       overscroll: { ...overscrollOptions },
     },
