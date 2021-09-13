@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
+import Scroll from './components/SmoothScroll';
+
 import './App.css';
 
 function App() {
+const [images,setImages] = useState();
+
+
+
+  useEffect(() => {
+      fetch('https://picsum.photos/v2/list?limit=10').then(res =>  res.json())
+      .then(json => {
+        //console.log(json);
+        setImages(json);
+      });
+
+ },[])
+
+  const random = () => {
+    return Math.floor(Math.random()*50);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="title">React Smooth Scroll</h1>
+      <Scroll />
+      {
+        images && images.map(
+          img => <div style={{marginLeft:`${random()}rem`}} key={img.id} className="imgContainer">
+            <img   src={img.download_url} alt={img.author} />
+          </div>
+        )
+      }
     </div>
   );
 }
