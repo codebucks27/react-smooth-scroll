@@ -7,7 +7,7 @@ http://react-smooth-scroll.vercel.app/
 
 If you want to learn how to create it please follow below tutorial: <br />
 
-https://youtu.be/5aG8peJsBVg
+https://youtu.be/x5yvDlH7X9A
 
 ### Library Used in This Project
 
