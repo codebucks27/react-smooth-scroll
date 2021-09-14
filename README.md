@@ -1,4 +1,18 @@
-# Getting Started with Create React App
+# How to implement smooth scrolling in ReactJS with few lines of code😇
+
+This repository contains code of smooth scroll component for ReactJS.
+
+View Demo:
+http://react-smooth-scroll.vercel.app/
+
+If you want to learn how to create it please follow below tutorial: <br />
+
+https://youtu.be/5aG8peJsBVg
+
+### Library Used in This Project
+
+Smooth-Scrollbar : https://www.npmjs.com/package/smooth-scrollbar <br />
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
